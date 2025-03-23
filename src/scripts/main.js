@@ -11,8 +11,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const borderTopWidth = parseInt(wallStyle.borderTopWidth) || 0;
     const spiderWidth = spider.offsetWidth;
     const spiderHeight = spider.offsetHeight;
-    let newX = event.clientX - wallRect.left - spiderWidth / 2 - 10;
-    let newY = event.clientY - wallRect.top - spiderHeight / 2 - 10;
+    let newX =
+      event.clientX - wallRect.left - spiderWidth / 2 - borderLeftWidth;
+    let newY = event.clientY - wallRect.top - spiderHeight / 2 - borderTopWidth;
     const innerWallWidth = wallRect.width - borderLeftWidth * 2;
     const innerWallHeight = wallRect.height - borderTopWidth * 2;
 
